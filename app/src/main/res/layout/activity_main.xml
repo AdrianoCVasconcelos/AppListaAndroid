@@ -7,8 +7,7 @@
     android:contextClickable="true"
     tools:context=".view.MainActivity">
 
-    <TextView
-        android:id="@+id/tex"
+    <TextView android:id="@+id/txtTituloApp"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_marginTop="52dp"
@@ -21,8 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/TextNome"
+    <EditText android:id="@+id/txtNomeAluno"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="16dp"
@@ -33,10 +31,9 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tex" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloApp" />
 
-    <EditText
-        android:id="@+id/TextSobrenome"
+    <EditText android:id="@+id/txtSobrenomeAluno"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="16dp"
@@ -47,10 +44,9 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextNome" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNomeAluno" />
 
-    <EditText
-        android:id="@+id/TextTelefone"
+    <EditText android:id="@+id/txtTelefoneAluno"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="16dp"
@@ -62,10 +58,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Textcurso_desejado" />
+        app:layout_constraintTop_toBottomOf="@+id/txtCursoDesejado" />
 
-    <EditText
-        android:id="@+id/Textcurso_desejado"
+    <EditText android:id="@+id/txtCursoDesejado"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="16dp"
@@ -76,20 +71,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.812"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextSobrenome" />
+        app:layout_constraintTop_toBottomOf="@+id/txtSobrenomeAluno" />
 
-    <Button
-        android:id="@+id/btnlimpar"
+    <Button android:id="@+id/btnlimpar"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="88dp"
         android:text="@string/txt_botao_limpar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextTelefone" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTelefoneAluno" />
 
-    <Button
-        android:id="@+id/btnsalvar"
+    <Button android:id="@+id/btnsalvar"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_marginTop="88dp"
@@ -98,10 +91,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/btnlimpar"
-        app:layout_constraintTop_toBottomOf="@+id/TextTelefone" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTelefoneAluno" />
 
-    <Button
-        android:id="@+id/btnfinalizar"
+    <Button android:id="@+id/btnfinalizar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="16dp"
