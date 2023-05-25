@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     PessoaController controller;
     CursoController cursoController;
     Pessoa pessoa;
-    List<String> nomesDosCursos;
+    List<Curso> listaDeCursos;
 
     EditText txtNomeAluno;
     EditText txtSobrenomeAluno;
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         controller.toString();
 
         cursoController = new CursoController();
-        nomesDosCursos = cursoController.dadosParaSpinner();
+        listaDeCursos = cursoController.getListaDeCursos();
 
         pessoa = new Pessoa();
         controller.buscar(pessoa);
